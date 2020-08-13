@@ -1,0 +1,29 @@
+body {
+    margin: 25vh 45vw;
+}
+@media (max-width: 1100px) {
+    body{
+        margin: 25vh 35.5vw;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+div {
+    background: #fff;
+    border: #000 solid 1px;
+
+    width: 195px;
+    height: 150px;
+}
+
+div:hover {
+    background: #e6dfdf;
+}
+
+div:active {
+    position: relative;
+    top: 1px;
+}
