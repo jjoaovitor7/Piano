@@ -3,11 +3,6 @@ body {
     margin: 15vh;
     justify-content: center;
 }
-@media (max-width: 1100px) {
-    body{
-        margin: 25vh 35.5vw;
-    }
-}
 
 .container {
     display: flex;
