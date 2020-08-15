@@ -8,5 +8,11 @@ function playNote (event) {
 }
 
 
+//clique do mouse
+for (let key of keys){
+    key.addEventListener("click", playNote);
+}
+
+
 // clique do teclado
 window.addEventListener("keydown", playNote);
