@@ -1,9 +1,12 @@
+// notas
 let keys = document.querySelector(".container").childNodes;
+// console.log(keys);
+
 
 function playNote (event) {
     // console.log(event);
-    // console.log(keys);
 }
 
 
+// clique do teclado
 window.addEventListener("keydown", playNote);
