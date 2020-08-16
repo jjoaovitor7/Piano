@@ -10,11 +10,12 @@ body {
 }
 
 div {
-    background: #fff;
-    border: #000 solid 1px;
+    animation: 1.5s slidein;
+    background: var(--color-div);
+    border: 1px solid #000;
 
-    width: 195px;
     height: 150px;
+    width: 195px;
 }
 
 div:hover {
@@ -24,4 +25,37 @@ div:hover {
 div:active {
     position: relative;
     top: 1px;
+}
+
+@keyframes slidein {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+@-moz-keyframes slidein {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+@-webkit-keyframes slidein {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+@-o-keyframes slidein {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
 }
