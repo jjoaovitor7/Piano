@@ -1,35 +1,37 @@
 // notas
-let keys = document.querySelector(".container").childNodes;
+let keys       = document.querySelector(".container").childNodes;
+let keysAudios = document.querySelectorAll("audio");
 // console.log(keys);
+console.log(keysAudios);
 
 
 function playNote (event) {
     // dó
     if (event.target == keys[1]) {
-        console.log(event.target);
+        keysAudios[0].play();
     }
     // ré
     else if (event.target == keys[3]) {
-        console.log(event.target);
+        keysAudios[1].play();
     }
     // mi
     else if (event.target == keys[5]) {
-        console.log(event.target);
+        keysAudios[2].play();
     }
     // fá
     else if (event.target == keys[7]) {
-        console.log(event.target);
+        keysAudios[3].play();
     }
     //sol
     else if (event.target == keys[9]) {
-        console.log(event.target);
+        keysAudios[4].play();
     }
     //lá
     else if (event.target == keys[11]) {
-        console.log(event.target);
+        keysAudios[5].play();
     }
     else if (event.target == keys[13]) {
-        console.log(event.target);
+        keysAudios[6].play();
     }
 }
 
