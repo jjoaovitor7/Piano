@@ -1,3 +1,8 @@
+:root {
+    --color-div: #fff;
+    --color-div-hover: #e6dfdf;
+}
+
 body {
     display: flex;
     margin: 25vh;
@@ -9,15 +14,15 @@ body {
 }
 
 div {
-    background: #fff;
-    border: #000 solid 1px;
+    background: var(--color-div);
+    border: 1px solid #000;
 
     width: 195px;
     height: 150px;
 }
 
 div:hover {
-    background: #e6dfdf;
+    background: var(--color-div-hover);
 }
 
 div:active {
