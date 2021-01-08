@@ -6,37 +6,37 @@ function playNote(event) {
   //mouse
   // dó
   if (event.target == mainKeys[0]) {
-    playTone(261, "sine", 0.5);
+    playTone(261.63, "sine", 0.5);
   }
 
   // dó sustenido
   else if (event.target == subKeys[0]) {
-    playTone(277.2, "sine", 0.5);
+    playTone(277.18, "sine", 0.5);
   }
 
   // ré
   else if (event.target == mainKeys[1]) {
-    playTone(293.7, "sine", 0.5);
+    playTone(293.66, "sine", 0.5);
   }
 
   // ré sustenido
   else if (event.target == subKeys[1]) {
-    playTone(311.1, "sine", 0.5);
+    playTone(311.13, "sine", 0.5);
   }
 
   // mi
   else if (event.target == mainKeys[2]) {
-    playTone(329.6, "sine", 0.5);
+    playTone(329.63, "sine", 0.5);
   }
 
   // fá
   else if (event.target == mainKeys[3]) {
-    playTone(349.2, "sine", 0.5);
+    playTone(349.23, "sine", 0.5);
   }
 
   // fá sustenido
   else if (event.target == subKeys[2]) {
-    playTone(370.0, "sine", 0.5);
+    playTone(369.99, "sine", 0.5);
   }
 
   // sol
@@ -46,7 +46,7 @@ function playNote(event) {
 
   // sol sustenido
   else if (event.target == subKeys[3]) {
-    playTone(466.2, "sine", 0.5);
+    playTone(415.3, "sine", 0.5);
   }
 
   // lá
@@ -56,12 +56,12 @@ function playNote(event) {
 
   // lá sustenido
   else if (event.target == subKeys[4]) {
-    playTone(466.2, "sine", 0.5);
+    playTone(466.16, "sine", 0.5);
   }
 
   // si
   else if (event.target == mainKeys[6]) {
-    playTone(493.9, "sine", 0.5);
+    playTone(493.88, "sine", 0.5);
   }
 
   //   //teclado
