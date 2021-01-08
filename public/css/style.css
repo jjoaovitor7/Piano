@@ -1,62 +1,87 @@
+:root {
+  --color-div: #fff;
+  --color-div-hover: #e6dfdf;
+}
+
 body {
-    display: flex;
-    margin: 15vh;
-    justify-content: center;
+  display: flex;
+  margin: 25vh;
+  justify-content: center;
 }
 
 .container {
-    display: flex;
-    justify-content: center !;
+  display: flex;
+  animation: 1.5s slidein;
+  background: var(--color-div);
+  border: 1px solid #000;
+
+  box-shadow: 1px 1px 1px #000;
+  height: 150px;
+  width: 195px;
 }
 
-div {
-    animation: 1.5s slidein;
-    background: var(--color-div);
-    border: 1px solid #000;
+div.main-note {
+  animation: 1.5s slidein;
+  background: var(--color-div);
+  border: 1px solid #000;
 
-    box-shadow: 1px 1px 1px #000;
-    height: 150px;
-    width: 195px;
+  box-shadow: 1px 1px 1px #000;
+  height: 150px;
+  width: 195px;
+  z-index: 0;
 }
 
-div:hover {
-    background: #e6dfdf;
+div.main-note:hover {
+  background: var(--color-div-hover);
 }
 
-div:active {
-    position: relative;
-    top: 1px;
+div.main-note:active {
+  position: relative;
+  top: 1px;
+}
+
+div.sub-note {
+  animation: 1.5s slidein;
+  background: var(--color-div);
+  border: 1px solid #000;
+
+  box-shadow: 1px 1px 1px #000;
+  height: 100px;
+  width: 10px;
+  margin-left: 15px;
+  background-color: #000;
+  z-index: 1;
 }
 
 @keyframes slidein {
-    from {
-        transform: scaleY(0);
-    }
-    to {
-        transform: scaleY(1);
-    }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 @-moz-keyframes slidein {
-    from {
-        transform: scaleY(0);
-    }
-    to {
-        transform: scaleY(1);
-    }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 @-webkit-keyframes slidein {
-    from {
-        transform: scaleY(0);
-    }
-    to {
-        transform: scaleY(1);
-    }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 @-o-keyframes slidein {
-    from {
-        transform: scaleY(0);
-    }
-    to {
-        transform: scaleY(1);
-    }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
