@@ -1,87 +1,84 @@
-:root {
-  --color-div: #fff;
-  --color-div-hover: #e6dfdf;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 25vh;
+  margin-top: 30vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container {
-  display: flex;
-  animation: 1.5s slidein;
-  background: var(--color-div);
-  border: 1px solid #000;
-
-  box-shadow: 1px 1px 1px #000;
   height: 150px;
   width: 195px;
 }
 
-div.main-note {
+.container,
+.note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: 1.5s slidein;
   animation: 1.5s slidein;
-  background: var(--color-div);
   border: 1px solid #000;
-
   box-shadow: 1px 1px 1px #000;
-  height: 150px;
-  width: 195px;
+}
+
+.note {
+  width: 100%;
+}
+
+.main-note {
+  background: #fff;
+  height: 100%;
   z-index: 0;
 }
 
-div.main-note:hover {
-  background: var(--color-div-hover);
+.main-note:hover {
+  background: #e6dfdf;
 }
 
-div.main-note:active {
+.main-note:active {
   position: relative;
   top: 1px;
 }
 
-div.sub-note {
-  animation: 1.5s slidein;
-  background: var(--color-div);
-  border: 1px solid #000;
-
-  box-shadow: 1px 1px 1px #000;
-  height: 100px;
-  width: 10px;
-  margin-left: 15px;
+.sub-note {
+  height: 65%;
+  margin-left: 1rem;
   background-color: #000;
   z-index: 1;
 }
 
 @keyframes slidein {
   from {
+    -webkit-transform: scaleY(0);
     transform: scaleY(0);
   }
+
   to {
+    -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
 }
-@-moz-keyframes slidein {
-  from {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
+
 @-webkit-keyframes slidein {
   from {
+    -webkit-transform: scaleY(0);
     transform: scaleY(0);
   }
+
   to {
-    transform: scaleY(1);
-  }
-}
-@-o-keyframes slidein {
-  from {
-    transform: scaleY(0);
-  }
-  to {
+    -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
 }

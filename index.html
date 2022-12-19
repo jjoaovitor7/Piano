@@ -1,68 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- metatags-->
-    <meta charset="UTF-8" />
-    <meta name="DC.title" content="Piano" />
-    <meta
-      name="description"
-      content="Piano para tocar as notas: Dó, Ré, Mi, Fá, Sol, Lá, Si."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="DC.title" content="Piano" />
+  <meta name="description" content="Piano para tocar as notas: Dó, Ré, Mi, Fá, Sol, Lá, Si." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      property="og:description"
-      content="Piano para tocar as notas: Dó, Ré, Mi, Fá, Sol, Lá, Si."
-    />
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="jjoaovitor7" />
-    <meta property="og:title" content="Piano" />
+  <meta property="og:title" content="Piano" />
+  <meta property="og:image" content="https://jjoaovitor7.github.io/Piano/assets/thumbnail.png" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./public/css/style.css" />
+  <link rel="image_src" href="./public/assets/thumbnail.png" />
+  <link rel="stylesheet" href="./public/css/style.css" />
+  <link rel="shortcut icon" href="./public/assets/thumbnail.png" />
+  <title>Piano</title>
+</head>
 
-    <!-- ícone -->
-    <link rel="shortcut icon" href="./public/assets/thumbnail.png" />
-
-    <!-- thumbnail -->
-    <meta
-      property="og:image"
-      content="https://jjoaovitor7.github.io/Piano/assets/thumbnail.png"
-    />
-    <link rel="image_src" href="./public/assets/thumbnail.png" />
-
-    <!-- title -->
-    <title>Piano</title>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="main-note" id="do" data-keyboard="C">
-        <div class="sub-note" id="do-sustenido" data-keyboard="C#"></div>
-      </div>
-
-      <div class="main-note" id="re" data-keyboard="D">
-        <div class="sub-note" id="re-sustenido" data-keyboard="D#"></div>
-      </div>
-
-      <div class="main-note" id="mi" data-keyboard="E"></div>
-
-      <div class="main-note" id="fa" data-keyboard="F">
-        <div class="sub-note" id="fa-sustenido" data-keyboard="F#"></div>
-      </div>
-
-      <div class="main-note" id="sol" data-keyboard="G">
-        <div class="sub-note" id="sol-sustenido" data-keyboard="G#"></div>
-      </div>
-
-      <div class="main-note" id="la" data-keyboard="A">
-        <div class="sub-note" id="la-sustenido" data-keyboard="A#"></div>
-      </div>
-
-      <div class="main-note" id="si" data-keyboard="B"></div>
+<body>
+  <div class="container">
+    <div class="note main-note" data-note="C">
+      <div class="note sub-note" data-note="C#"></div>
     </div>
 
-    <script src="./public/scripts/simpleTones.js"></script>
-    <script type="text/javascript" src="./public/scripts/main.js"></script>
-  </body>
+    <div class="note main-note" data-note="D">
+      <div class="note sub-note" data-note="D#"></div>
+    </div>
+
+    <div class="note main-note" data-note="E"></div>
+
+    <div class="note main-note" data-note="F">
+      <div class="note sub-note" data-note="F#"></div>
+    </div>
+
+    <div class="note main-note" data-note="G">
+      <div class="note sub-note" data-note="G#"></div>
+    </div>
+
+    <div class="note main-note" data-note="A">
+      <div class="note sub-note" data-note="A#"></div>
+    </div>
+
+    <div class="note main-note" data-note="B"></div>
+  </div>
+
+  <script type="text/javascript" src="./public/scripts/main.js"></script>
+</body>
 </html>
