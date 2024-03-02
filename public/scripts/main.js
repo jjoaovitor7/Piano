@@ -16,10 +16,10 @@ const notes_frequency = {
   "G#": 415.3
 }
 
-const play_note = (e) => {
+const play_note = (note) => {
   const oscillator = audio_ctx.createOscillator();
   oscillator.type = "sine";
-  oscillator.frequency.value = notes_frequency[e.target.getAttribute("data-note")];
+  oscillator.frequency.value = notes_frequency[note];
   oscillator.connect(audio_ctx.destination);
   oscillator.start();
 
@@ -29,5 +29,16 @@ const play_note = (e) => {
 }
 
 notes.forEach((note) => {
-  note.addEventListener("click", play_note);
+  note.addEventListener("click", () => play_note(note.dataset.note));
+  window.addEventListener("keydown", (e) => {
+    if (String.fromCharCode(note.dataset.letter.toLowerCase().charCodeAt()) == e.key) {
+      note.style.top = '2px';
+
+      setTimeout(() => {
+        note.style.top = null;
+      }, 256);
+
+      note.click();
+    }
+  });
 });

@@ -19,7 +19,7 @@ body {
 
 .container {
   height: 150px;
-  width: 195px;
+  width: 250px;
 }
 
 .container,
@@ -34,7 +34,7 @@ body {
 }
 
 .note {
-  width: 100%;
+  position: relative;
 }
 
 .main-note {
@@ -49,14 +49,25 @@ body {
 
 .main-note:active {
   position: relative;
-  top: 1px;
+  top: 2px;
 }
 
 .sub-note {
-  height: 65%;
-  margin-left: 1rem;
+  height: 68%;
   background-color: #000;
   z-index: 1;
+  width: 8px;
+}
+
+.note-letter {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 1.6rem;
+  font-size: .68rem;
+  position: relative;
+  left: .4rem;
+  color: #666;
 }
 
 @keyframes slidein {
