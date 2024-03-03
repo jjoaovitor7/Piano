@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  height: 150px;
+  height: 180px;
   width: 250px;
 }
 
@@ -67,7 +67,9 @@ body {
   font-size: .68rem;
   position: relative;
   left: .4rem;
-  color: #666;
+  color: #665;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 @keyframes slidein {

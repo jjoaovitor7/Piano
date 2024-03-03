@@ -29,7 +29,9 @@ const play_note = (note) => {
 }
 
 notes.forEach((note) => {
-  note.addEventListener("click", () => play_note(note.dataset.note));
+  note.addEventListener("click", (e) => {
+    play_note(e.target.dataset.note)
+  });
   window.addEventListener("keydown", (e) => {
     if (String.fromCharCode(note.dataset.letter.toLowerCase().charCodeAt()) == e.key) {
       note.style.top = '2px';
